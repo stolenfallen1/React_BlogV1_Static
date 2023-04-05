@@ -1,0 +1,40 @@
+.challenges-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 100px;
+    height: 90vh;
+}
+
+.challenges-text {
+    flex: 1;
+    margin-right: 100px;
+    text-align: right;
+}
+
+.challenges-text h1 {
+    font-size: 5rem;
+    color: rgb(155, 94, 202);
+    margin-bottom: 25px;
+}
+
+.challenges-text p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.challenges-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.challenges-image {
+    max-width: 100%;
+    max-height: 600px;
+    border-radius: 10px;
+}

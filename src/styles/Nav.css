@@ -1,0 +1,44 @@
+.nav-container {
+    background-color: #C899EC;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-container.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 4px 14px #C899EC;
+}
+
+.nav-logo {
+    padding: 10px 35px;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-icons {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 25px;
+}
+
+.nav-icons .facebook:hover {
+    color: #4068be;
+    transition: color 0.3s;
+}
+
+.nav-icons .instagram:hover {
+    color: #d62976;
+    transition: color 0.3s;
+}
+
+.nav-icons .github:hover {
+    color: #7a51da;
+    transition: color 0.3s;
+}
