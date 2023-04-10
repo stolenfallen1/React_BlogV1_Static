@@ -1,40 +1,100 @@
 .challenges-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 0px 100px;
-    height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 100px;
+  height: 90vh;
 }
 
 .challenges-text {
-    flex: 1;
-    margin-right: 100px;
-    text-align: right;
+  flex: 1;
+  margin-right: 100px;
+  text-align: right;
 }
 
 .challenges-text h1 {
-    font-size: 5rem;
-    color: rgb(155, 94, 202);
-    margin-bottom: 25px;
+  font-size: 5rem;
+  color: rgb(155, 94, 202);
+  margin-bottom: 25px;
 }
 
 .challenges-text p {
-    font-style: italic;
-    font-weight: 300;
-    font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.25rem;
 }
 
 .challenges-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .challenges-image {
-    max-width: 100%;
-    max-height: 600px;
-    border-radius: 10px;
+  max-width: 100%;
+  max-height: 600px;
+  border-radius: 10px;
+}
+
+/* 1080 screen size */
+@media screen and (max-width: 1080px) {
+  .challenges-container {
+    padding: 0px 70px;
+  }
+
+  .challenges-text h1 {
+    font-size: 4rem;
+  }
+
+  .challenges-text p {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .challenges-text {
+    margin-right: 50px;
+  }
+}
+
+/* 768 screen size */
+@media screen and (max-width: 768px) {
+  .challenges-container {
+    flex-direction: column-reverse;
+    padding: 50px 70px;
+  }
+
+  .challenges-text {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .challenges-text h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+  }
+
+  .challenges-img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 25px;
+  }
+}
+/* 600 screen size */
+@media screen and (max-width: 600px) {
+  .challenges-container {
+    padding: 70px 20px;
+  }
+
+  .challenges-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .challenges-text p {
+    font-size: 1rem;
+  }
 }

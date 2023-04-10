@@ -98,17 +98,3 @@
     font-size: 1rem;
   }
 }
-/* 500 screen size */
-@media screen and (max-width: 600px) {
-  .about-container {
-    padding: 70px 20px;
-  }
-
-  .about-text h1 {
-    font-size: 3.5rem;
-  }
-
-  .about-text p {
-    font-size: 1rem;
-  }
-}

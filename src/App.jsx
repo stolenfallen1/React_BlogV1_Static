@@ -25,8 +25,8 @@ function App() {
       <Nav />
       <Hero />
       <About />
-      {/* <Challenges />
-      <div className="slide-container">
+      <Challenges />
+      {/* <div className="slide-container">
         <Slider slides={slides} />
       </div>
       <Footer /> */}
