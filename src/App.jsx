@@ -24,12 +24,12 @@ function App() {
     <div className="App">
       <Nav />
       <Hero />
-      <About />
+      {/* <About />
       <Challenges />
       <div className="slide-container">
         <Slider slides={slides} />
       </div>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
