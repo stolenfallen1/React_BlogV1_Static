@@ -38,7 +38,8 @@
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  left: -70px; /* adjust as needed */
+  left: -70px;
+  /* adjust as needed */
   font-size: 45px;
   color: #9b5eca;
   z-index: 1;
@@ -49,7 +50,8 @@
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  right: -70px; /* adjust as needed */
+  right: -70px;
+  /* adjust as needed */
   font-size: 45px;
   color: #9b5eca;
   z-index: 1;
@@ -78,7 +80,7 @@
   transform: translate(-50%, -50%);
   color: #fff;
   font-family: "Sacramento", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.55s ease;
@@ -86,4 +88,121 @@
 
 .slides:hover .image-overlay {
   opacity: 1;
+}
+
+/* 1080 screen size */
+@media screen and (max-width: 1080px) {
+  .slider-header {
+    font-size: 4rem;
+  }
+
+}
+
+/* 900 screen size */
+@media screen and (max-width: 900px) {
+  .slider-header {
+    margin-bottom: 2rem;
+  }
+
+  .left-arrow {
+    left: -60px;
+    font-size: 40px;
+  }
+
+  .right-arrow {
+    right: -60px;
+    /* adjust as needed */
+    font-size: 40px;
+  }
+
+  .dot-styles {
+    margin: 10px 5px;
+    font-size: 17px;
+  }
+
+}
+
+/* 768 screen size */
+@media screen and (max-width: 768px) {
+  .left-arrow {
+    left: -50px;
+  }
+
+  .right-arrow {
+    right: -50px;
+  }
+
+  .dot-styles {
+    margin: 10px 5px;
+    font-size: 15px;
+  }
+
+}
+
+/* 600 screen size */
+@media screen and (max-width: 600px) {
+  .slider-header {
+    font-size: 3.5rem;
+  }
+
+  .left-arrow {
+    left: -45px;
+    font-size: 35px;
+  }
+
+  .right-arrow {
+    right: -45px;
+    font-size: 35px;
+  }
+
+  .dot-styles {
+    margin: 15px 4px;
+    font-size: 13.5px;
+  }
+
+}
+
+/* 566 screen size */
+@media screen and (max-width: 566px) {
+  .image-overlay {
+    font-size: 2.5rem;
+  }
+}
+
+/* 500 screen size */
+@media screen and (max-width: 500px) {
+  .left-arrow {
+    left: -36.5px;
+    font-size: 32px;
+  }
+
+  .right-arrow {
+    right: -36.5px;
+    font-size: 32px;
+  }
+
+  .dot-styles {
+    margin: 15px 4px;
+    font-size: 11.5px;
+  }
+
+}
+
+/* 414 screen size */
+@media screen and (max-width: 414px) {
+  .left-arrow {
+    left: -33.5px;
+    font-size: 30px;
+  }
+
+  .right-arrow {
+    right: -33.5px;
+    font-size: 30px;
+  }
+
+  .dot-styles {
+    margin: 15px 3px;
+    font-size: 10px;
+  }
+
 }

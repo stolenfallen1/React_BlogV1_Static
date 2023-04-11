@@ -6,8 +6,30 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
 .slide-container {
   margin: 0 auto;
   width: 500px;
   height: auto;
+}
+
+/* 666 screen size */
+@media screen and (max-width: 666px) {
+  .slide-container {
+    width: 445px;
+  }
+}
+
+/* 566 screen size */
+@media screen and (max-width: 566px) {
+  .slide-container {
+    width: 385px;
+  }
+}
+
+/* 466 screen size */
+@media screen and (max-width: 466px) {
+  .slide-container {
+    width: 325px;
+  }
 }

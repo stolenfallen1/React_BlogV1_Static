@@ -26,10 +26,10 @@ function App() {
       <Hero />
       <About />
       <Challenges />
-      {/* <div className="slide-container">
+      <div className="slide-container">
         <Slider slides={slides} />
       </div>
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
