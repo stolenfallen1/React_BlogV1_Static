@@ -16,6 +16,10 @@
   box-shadow: 0 4px 14px #c899ec;
 }
 
+.logo-container {
+  flex-grow: 1;
+}
+
 .nav-logo {
   padding: 10px 35px;
   max-width: 100%;
@@ -47,14 +51,22 @@
   transition: color 0.3s;
 }
 
+.toggle {
+  padding: 0px 25px;
+}
+
 /* 600 screen size */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .nav-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 15vh;
+  }
+
+  .logo-container {
+    flex-grow: 0;
   }
 
   .nav-logo {
@@ -65,4 +77,9 @@
     font-size: 1.5rem;
     padding: 0;
   }
+
+  .toggle {
+    display: none;
+  }
+
 }

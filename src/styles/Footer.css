@@ -14,3 +14,24 @@
 .underline {
   text-decoration: underline;
 }
+
+/* 768 screen size */
+@media screen and (max-width: 768px) {
+  .footer-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* 600 screen size */
+@media screen and (max-width: 600px) {
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* 500 screen size */
+@media screen and (max-width: 500px) {
+  .footer-text {
+    font-size: 0.7rem;
+  }
+}

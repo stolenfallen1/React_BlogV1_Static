@@ -3,6 +3,7 @@ import logo from "../assets/Logo.svg";
 import "../styles/Nav.css";
 import { FaFacebook } from "react-icons/fa";
 import { BsInstagram, BsGithub } from "react-icons/bs";
+import Switch from 'react-switch'
 
 const Nav = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -22,9 +23,17 @@ const Nav = () => {
     }
   };
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <div className={isSticky ? "nav-container sticky" : "nav-container"}>
-      <img src={logo} className="nav-logo" />
+      <div className="logo-container">
+        <img src={logo} className="nav-logo" />
+      </div>
       <div className="nav-icons">
         <a href="https://www.facebook.com/vandaxthegreat1">
           <FaFacebook style={{ marginRight: "20px" }} className="facebook" />
@@ -35,6 +44,14 @@ const Nav = () => {
         <a href="https://github.com/VandaxTheGreat">
           <BsGithub className="github" />
         </a>
+      </div>
+      <div className="toggle">
+        <Switch
+          checked={isDarkMode}
+          onChange={toggleTheme}
+          checkedIcon={false}
+          uncheckedIcon={false}
+        />
       </div>
     </div>
   );
