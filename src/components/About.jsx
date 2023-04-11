@@ -1,9 +1,9 @@
 import aboutImg from '../assets/img-1.jpg'
 import '../styles/About.css'
 
-const About = () => {
+const About = ({ isDarkMode }) => {
     return (
-        <div className="about-container">
+        <div className={`about-container ${isDarkMode ? "dark-mode" : ""}`}>
             <div className="about-text">
                 <h1>About</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorum aperiam nam neque pariatur quis obcaecati porro, dignissimos nulla dicta

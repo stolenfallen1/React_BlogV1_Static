@@ -66,6 +66,7 @@
 .dot-styles {
   margin: 10px 5px;
   font-size: 20px;
+  color: #000;
   cursor: pointer;
 }
 
@@ -88,6 +89,26 @@
 
 .slides:hover .image-overlay {
   opacity: 1;
+}
+
+.dark-mode .slider-header {
+  color: #c899ec;
+}
+
+.dark-mode .right-arrow {
+  color: #c899ec;
+}
+
+.dark-mode .left-arrow {
+  color: #c899ec;
+}
+
+.dark-mode .dot-styles {
+  color: #fff;
+}
+
+.dark-mode .active-dot {
+  color: #c899ec;
 }
 
 /* 1080 screen size */

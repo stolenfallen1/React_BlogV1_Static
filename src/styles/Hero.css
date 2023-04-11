@@ -35,6 +35,11 @@
   max-height: 100%;
 }
 
+/* DARK MODE */
+.dark-mode .text-container h1 {
+  color: #c899ec;
+}
+
 /* 1080 screen size */
 @media screen and (max-width: 1080px) {
   .hero-container {
@@ -72,6 +77,7 @@
     height: 50%;
   }
 }
+
 /* 600 screen size */
 @media screen and (max-width: 600px) {
   .hero-container {

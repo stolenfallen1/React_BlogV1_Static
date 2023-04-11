@@ -55,6 +55,30 @@
   padding: 0px 25px;
 }
 
+/* DARK MODE */
+.nav-container.dark-mode {
+  background-color: #9b5eca !important;
+}
+
+.dark-mode .nav-icons a {
+  color: #fff;
+}
+
+.dark-mode .nav-icons .facebook:hover {
+  color: #4068be;
+  transition: color 0.3s;
+}
+
+.dark-mode .nav-icons .instagram:hover {
+  color: #d62976;
+  transition: color 0.3s;
+}
+
+.dark-mode .nav-icons .github:hover {
+  color: #7a51da;
+  transition: color 0.3s;
+}
+
 /* 600 screen size */
 @media screen and (max-width: 600px) {
   .nav-container {

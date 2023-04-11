@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import "../styles/Slider.css";
 import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
 
-const Slider = ({ slides }) => {
+const Slider = ({ slides, isDarkMode }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrev = () => {
@@ -23,8 +23,8 @@ const Slider = ({ slides }) => {
   };
 
   return (
-    <>
-      <h1 className="slider-header">Collections</h1>
+    <Fragment>
+      <h1 className={`slider-header ${isDarkMode ? "dark-mode" : ""}`}>Collections</h1>
       <div className="slider">
         <div className="left-arrow" onClick={goToPrev}>
           <BsFillArrowLeftSquareFill />
@@ -41,9 +41,8 @@ const Slider = ({ slides }) => {
         <div className="dot-container">
           {slides.map((slide, index) => (
             <div
-              className={`dot-styles ${
-                index === currentIndex ? "active-dot" : ""
-              }`}
+              className={`dot-styles ${index === currentIndex ? "active-dot" : ""
+                }`}
               key={index}
               onClick={() => goToSlide(index)}
             >
@@ -52,7 +51,7 @@ const Slider = ({ slides }) => {
           ))}
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 

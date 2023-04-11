@@ -1,9 +1,9 @@
 import "../styles/Footer.css";
 import { FcCollaboration } from "react-icons/fc";
 
-const Footer = () => {
+const Footer = ({ isDarkMode }) => {
   return (
-    <div className="footer">
+    <div className={`footer ${isDarkMode ? "dark-mode" : ""}`}>
       <p className="footer-text">
         Developed & Deployed &copy;&nbsp;
         <span className="underline">stolenfallen1</span>

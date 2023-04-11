@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./styles/Main.css";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
@@ -12,6 +13,12 @@ import slide4 from "./images/slider4.jpg";
 import slide5 from "./images/slider5.jpg";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDarkMode(prevState => !prevState);
+  };
+
   const slides = [
     { image: slide1, title: "slider1" },
     { image: slide2, title: "slider2" },
@@ -21,15 +28,15 @@ function App() {
   ];
 
   return (
-    <div className="App">
-      <Nav />
+    <div className={`App ${isDarkMode ? "dark-mode" : ""}`}>
+      <Nav isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       <Hero />
-      <About />
-      <Challenges />
+      <About isDarkMode={isDarkMode} />
+      <Challenges isDarkMode={isDarkMode} />
       <div className="slide-container">
         <Slider slides={slides} />
       </div>
-      <Footer />
+      <Footer isDarkMode={isDarkMode} />
     </div>
   );
 }

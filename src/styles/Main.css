@@ -13,6 +13,14 @@
   height: auto;
 }
 
+.dark-mode {
+  background-color: #242424;
+}
+
+.dark-mode p {
+  color: #fff;
+}
+
 /* 666 screen size */
 @media screen and (max-width: 666px) {
   .slide-container {

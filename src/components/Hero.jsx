@@ -1,9 +1,9 @@
 import svg from "../assets/Internship-amico.svg";
 import "../styles/Hero.css";
 
-const Hero = () => {
+const Hero = ({ isDarkMode }) => {
   return (
-    <div className="hero-container">
+    <div className={`hero-container ${isDarkMode ? "dark-mode" : ""}`}>
       <div className="text-container">
         <h1>My Internship Journey</h1>
         <p>

@@ -39,6 +39,10 @@
   border-radius: 10px;
 }
 
+.dark-mode .challenges-text h1 {
+  color: #c899ec;
+}
+
 /* 1080 screen size */
 @media screen and (max-width: 1080px) {
   .challenges-container {
@@ -84,6 +88,7 @@
     margin-bottom: 25px;
   }
 }
+
 /* 600 screen size */
 @media screen and (max-width: 600px) {
   .challenges-container {

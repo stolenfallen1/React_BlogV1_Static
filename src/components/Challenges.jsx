@@ -1,9 +1,9 @@
 import challengesImg from '../assets/img-2.jpeg'
 import '../styles/Challenges.css'
 
-const Challenges = () => {
+const Challenges = ({ isDarkMode }) => {
     return (
-        <div className="challenges-container">
+        <div className={`hero-container ${isDarkMode ? "dark-mode" : ""}`}>
             <div className="challenges-text">
                 <h1>Challenges</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorum aperiam nam neque pariatur quis obcaecati porro, dignissimos nulla dicta

@@ -5,7 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 import { BsInstagram, BsGithub } from "react-icons/bs";
 import Switch from 'react-switch'
 
-const Nav = () => {
+const Nav = ({ isDarkMode, toggleTheme }) => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -23,14 +23,8 @@ const Nav = () => {
     }
   };
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
   return (
-    <div className={isSticky ? "nav-container sticky" : "nav-container"}>
+    <div className={`nav-container ${isDarkMode ? "dark-mode" : ""} ${isSticky ? "sticky" : ""}`}>
       <div className="logo-container">
         <img src={logo} className="nav-logo" />
       </div>
