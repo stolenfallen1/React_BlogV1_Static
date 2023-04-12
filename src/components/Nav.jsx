@@ -4,6 +4,7 @@ import "../styles/Nav.css";
 import { FaFacebook } from "react-icons/fa";
 import { BsInstagram, BsGithub } from "react-icons/bs";
 import Switch from 'react-switch'
+import { Link } from "react-router-dom";
 
 const Nav = ({ isDarkMode, toggleTheme }) => {
   const [isSticky, setIsSticky] = useState(false);
@@ -26,7 +27,7 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
   return (
     <div className={`nav-container ${isDarkMode ? "dark-mode" : ""} ${isSticky ? "sticky" : ""}`}>
       <div className="logo-container">
-        <img src={logo} className="nav-logo" />
+        <Link to="/" ><img src={logo} className="nav-logo" /></Link>
       </div>
       <div className="nav-icons">
         <a href="https://www.facebook.com/vandaxthegreat1">

@@ -2,6 +2,7 @@ import React, { useState, Fragment } from "react";
 import "../styles/Slider.css";
 import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Slider = ({ slides, isDarkMode }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +52,7 @@ const Slider = ({ slides, isDarkMode }) => {
           ))}
         </div>
         <div className="button-container">
-          <button className="slider-button">See More</button>
+          <Link to="/Cards" className="slider-button">See More</Link>
         </div>
       </div>
     </Fragment>
