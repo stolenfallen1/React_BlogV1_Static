@@ -36,7 +36,6 @@
 .challenges-image {
   max-width: 100%;
   max-height: 600px;
-  border-radius: 10px;
 }
 
 .dark-mode .challenges-text h1 {
@@ -87,6 +86,7 @@
     height: 50%;
     margin-bottom: 25px;
   }
+
 }
 
 /* 600 screen size */

@@ -61,6 +61,7 @@
 .dot-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .dot-styles {
@@ -87,6 +88,22 @@
   transition: opacity 0.55s ease;
 }
 
+.button-container {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.slider-button {
+  padding: 15px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #9b5eca;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .slides:hover .image-overlay {
   opacity: 1;
 }
@@ -109,6 +126,10 @@
 
 .dark-mode .active-dot {
   color: #c899ec;
+}
+
+.dark-mode .slider-button {
+  background-color: #c899ec;
 }
 
 /* 1080 screen size */
@@ -179,6 +200,15 @@
   .dot-styles {
     margin: 15px 4px;
     font-size: 13.5px;
+  }
+
+  .button-container {
+    padding-top: 30px;
+  }
+
+  .slider-button {
+    padding: 13px;
+    font-size: 0.9rem;
   }
 
 }

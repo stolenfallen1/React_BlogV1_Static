@@ -50,6 +50,9 @@ const Slider = ({ slides, isDarkMode }) => {
             </div>
           ))}
         </div>
+        <div className="button-container">
+          <button className="slider-button">See More</button>
+        </div>
       </div>
     </Fragment>
   );

@@ -11,7 +11,7 @@ const About = ({ isDarkMode }) => {
                     repellendus id autem non enim, dicta labore quidem est mollitia optio magni dolores!</p>
             </div>
             <div className="about-img">
-                <img src={aboutImg} className="about-image" />
+                <img src={aboutImg} className="about-image" style={{ borderRadius: "10px" }} />
             </div>
         </div>
     )
