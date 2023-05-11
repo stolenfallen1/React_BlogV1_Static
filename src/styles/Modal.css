@@ -29,6 +29,7 @@
 .modal-header h2 {
   margin: 0;
   font-size: 24px;
+  letter-spacing: -0.05em;
 }
 
 .close-btn {
@@ -40,4 +41,5 @@
 
 .modal-body {
   padding: 20px;
+  text-align: justify;
 }
