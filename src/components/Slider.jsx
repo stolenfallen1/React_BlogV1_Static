@@ -25,7 +25,9 @@ const Slider = ({ slides, isDarkMode }) => {
 
   return (
     <Fragment>
-      <h1 className={`slider-header ${isDarkMode ? "dark-mode" : ""}`}>Collections</h1>
+      <h1 className={`slider-header ${isDarkMode ? "dark-mode" : ""}`}>
+        Collections
+      </h1>
       <div className="slider">
         <div className="left-arrow" onClick={goToPrev}>
           <BsFillArrowLeftSquareFill />
@@ -42,17 +44,15 @@ const Slider = ({ slides, isDarkMode }) => {
         <div className="dot-container">
           {slides.map((slide, index) => (
             <div
-              className={`dot-styles ${index === currentIndex ? "active-dot" : ""
-                }`}
+              className={`dot-styles ${
+                index === currentIndex ? "active-dot" : ""
+              }`}
               key={index}
               onClick={() => goToSlide(index)}
             >
               &#x25cf;
             </div>
           ))}
-        </div>
-        <div className="button-container">
-          <Link to="/Cards" className="slider-button">See More</Link>
         </div>
       </div>
     </Fragment>
