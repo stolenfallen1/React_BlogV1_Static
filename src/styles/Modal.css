@@ -43,3 +43,7 @@
   padding: 20px;
   text-align: justify;
 }
+
+.modal-body p {
+  color: #000 !important;
+}
