@@ -3,9 +3,11 @@ import "../styles/Slider.css";
 import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import Modal from "./Modal";
 
 const Slider = ({ slides, isDarkMode }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const goToPrev = () => {
     const isFirstSlide = currentIndex === 0;
@@ -23,6 +25,16 @@ const Slider = ({ slides, isDarkMode }) => {
     setCurrentIndex(index);
   };
 
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const currentSlide = slides[currentIndex];
+
   return (
     <Fragment>
       <h1 className={`slider-header ${isDarkMode ? "dark-mode" : ""}`}>
@@ -37,7 +49,8 @@ const Slider = ({ slides, isDarkMode }) => {
         </div>
         <div
           className="slides"
-          style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
+          style={{ backgroundImage: `url(${currentSlide.image})` }}
+          onClick={openModal}
         >
           <div className="image-overlay">Tap to view</div>
         </div>
@@ -55,6 +68,7 @@ const Slider = ({ slides, isDarkMode }) => {
           ))}
         </div>
       </div>
+      {isModalOpen && <Modal content={currentSlide} onClose={closeModal} />}
     </Fragment>
   );
 };
